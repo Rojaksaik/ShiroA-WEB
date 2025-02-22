@@ -102,7 +102,7 @@ const translations = {
             extensionTip: "Klik tautan ekstensi apa pun untuk menyalinnya ke clipboard Anda. Anda kemudian dapat menempelkannya di pengelola ekstensi aplikasi."
             },
         gettingStarted: {
-            title: 'Memulai',
+            title: 'Cara Penggunaan',
             step1: {
                 title: '1. Unduh & Pasang',
                 description: 'Dapatkan ShiroA dari app store perangkat Anda dan pasang'
@@ -164,7 +164,7 @@ const translations = {
             extensionTip: "「拡張機能のリンクをクリックしてクリップボードにコピーします。その後、アプリの拡張機能マネージャーに貼り付けることができます。」"
             },
         gettingStarted: {
-            title: '始めましょう',
+            title: '使用方法',
             step1: {
                 title: '1. ダウンロード＆インストール',
                 description: 'デバイスのアプリストアからShiroAを入手してインストール'
