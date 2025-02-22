@@ -23,24 +23,40 @@
 </head>
 <body class="bg-white dark:bg-gray-900 transition-all duration-300">
     <!-- Navigation Bar -->
-    <nav class="fixed w-full top-0 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm z-50 shadow-lg">
-        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-                <img src="/logo/favicon.png" alt="ShiroA Logo" class="w-8 h-8">
-                <span class="text-xl font-bold text-gray-800 dark:text-white">ShiroA</span>
+    <body class="bg-white dark:bg-gray-900 transition-all duration-300">
+        <!-- Navigation Bar -->
+        <nav class="fixed w-full top-0 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm z-50 shadow-lg">
+            <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <img src="/logo/favicon.png" alt="ShiroA Logo" class="w-8 h-8">
+                    <span class="text-xl font-bold text-gray-800 dark:text-white">ShiroA</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="https://shiro-zonemy.vercel.app/" target="_blank" 
+                       class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg transition-colors">
+                        Shiro-Zone
+                    </a>
+                    <div class="flex items-center gap-4">
+                        <button class="lang-btn px-3 py-1 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-600 transition-colors" data-lang="en">
+                            EN
+                        </button>
+                        <button class="lang-btn px-3 py-1 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-600 transition-colors" data-lang="id">
+                            ID
+                        </button>
+                        <button class="lang-btn px-3 py-1 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-600 transition-colors" data-lang="ja">
+                            JP
+                        </button>
+                    </div>
+                                       
+                    
+    
+                    <button id="theme-toggle" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 shadow-lg transition-transform hover:scale-110">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:block"></i>
+                    </button>
+                </div>
             </div>
-            <div class="flex items-center gap-4">
-                <a href="https://shiro-zonemy.vercel.app/" target="_blank" 
-                   class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg transition-colors">
-                    Shiro-Zone
-                </a>
-                <button id="theme-toggle" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 shadow-lg transition-transform hover:scale-110">
-                    <i class="fas fa-moon dark:hidden"></i>
-                    <i class="fas fa-sun hidden dark:block"></i>
-                </button>
-            </div>
-        </div>
-    </nav>
+        </nav>
 
     <div class="container mx-auto px-4 py-8 mt-16">
         <!-- Header -->
@@ -165,29 +181,40 @@
                 <div class="flex items-center gap-6">
                     <img src="/img/shiro4.png" alt="Step 1" class="w-1/3 rounded-lg shadow-md">
                     <div>
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">1. Download & Install</h3>
-                        <p class="text-gray-600 dark:text-gray-300">Get ShiroA from your device's app store and install it</p>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white" data-translate="gettingStarted.step1.title"></h3>
+                        <p class="text-gray-600 dark:text-gray-300" data-translate="gettingStarted.step1.description"></p>                            
                     </div>
                 </div>
                 
                 <div class="flex items-center gap-6">
                     <img src="/img/shiro5.png" alt="Step 2" class="w-1/3 rounded-lg shadow-md">
                     <div>
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">2. Setup Account</h3>
-                        <p class="text-gray-600 dark:text-gray-300">Create your account and customize your anime preferences</p>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white" data-translate="gettingStarted.step2.title"></h3>
+                        <p class="text-gray-600 dark:text-gray-300" data-translate="gettingStarted.step2.description"></p>                            
                     </div>
                 </div>
+        
                 
+        
                 <div class="flex items-center gap-6">
-                    <img src="/img/shiro6.png" alt="Step 3" class="w-1/3 rounded-lg shadow-md">
+                    <img src="/img/shiro6.png" alt="Step 4" class="w-1/3 rounded-lg shadow-md">
                     <div>
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">3. Start Streaming</h3>
-                        <p class="text-gray-600 dark:text-gray-300">Connect with Shiro-Zone and start watching your favorite anime</p>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white" data-translate="gettingStarted.step3.title"></h3>
+                        <p class="text-gray-600 dark:text-gray-300" data-translate="gettingStarted.step3.description"></p>                            
                     </div>
                 </div>
-            </div>
+        
+                <div class="flex items-center gap-6">
+                    <img src="/img/shiro7.png" alt="Step 4" class="w-1/3 rounded-lg shadow-md">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white" data-translate="gettingStarted.step4.title"></h3>
+                        <p class="text-gray-600 dark:text-gray-300" data-translate="gettingStarted.step4.description"></p>                           
+                    </div>
+                </div>
+
         </section>
     </div>
          <script src="script.js"></script>
+         <script src="translations.js"></script>
 </body>
 </html>
