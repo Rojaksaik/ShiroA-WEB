@@ -23,66 +23,76 @@
 </head>
 <body class="bg-white dark:bg-gray-900 transition-all duration-300">
     <!-- Navigation Bar -->
-    <body class="bg-white dark:bg-gray-900 transition-all duration-300">
-        <!-- Navigation Bar -->
-        <nav class="fixed w-full top-0 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm z-50 shadow-lg">
-            <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+    <nav class="fixed w-full top-0 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
                 <div class="flex items-center gap-2">
                     <img src="/logo/favicon.png" alt="ShiroA Logo" class="w-8 h-8">
-                    <span class="text-xl font-bold text-gray-800 dark:text-white">ShiroA</span>
+                    <span class="text-xl font-bold text-gray-800 dark:text-white" data-translate="nav.title">ShiroA</span>
                 </div>
-                <div class="flex items-center gap-4">
-                    <a href="https://shiro-zonemy.vercel.app/" target="_blank" 
-                       class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg transition-colors">
-                        Shiro-Zone
-                    </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden sm:flex items-center gap-4">
                     <div class="flex items-center gap-4">
-                        <button class="lang-btn px-3 py-1 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-600 transition-colors" data-lang="en">
-                            EN
-                        </button>
-                        <button class="lang-btn px-3 py-1 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-600 transition-colors" data-lang="id">
-                            ID
-                        </button>
-                        <button class="lang-btn px-3 py-1 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-600 transition-colors" data-lang="ja">
-                            JP
-                        </button>
+                        <button class="lang-btn px-3 py-1 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-600 transition-colors" data-lang="en">EN</button>
+                        <button class="lang-btn px-3 py-1 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-600 transition-colors" data-lang="id">ID</button>
+                        <button class="lang-btn px-3 py-1 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-600 transition-colors" data-lang="ja">JP</button>
                     </div>
-                                       
-                    
-    
                     <button id="theme-toggle" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 shadow-lg transition-transform hover:scale-110">
                         <i class="fas fa-moon dark:hidden"></i>
                         <i class="fas fa-sun hidden dark:block"></i>
                     </button>
                 </div>
+    
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="sm:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-        </nav>
+    
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden sm:hidden mt-4 p-4 bg-white dark:bg-gray-800 rounded-lg">
+                <div class="flex flex-col gap-4">
+                    <div class="flex items-center gap-4">
+                        <button class="lang-btn px-3 py-1 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-600 transition-colors" data-lang="en">EN</button>
+                        <button class="lang-btn px-3 py-1 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-600 transition-colors" data-lang="id">ID</button>
+                        <button class="lang-btn px-3 py-1 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-600 transition-colors" data-lang="ja">JP</button>
+                    </div>
+                    <button id="mobile-theme-toggle" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 shadow-lg transition-transform hover:scale-110">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:block"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <div class="container mx-auto px-4 py-8 mt-16">
         <!-- Header -->
-        <header class="text-center mb-16 pt-8">
+        <header class="text-center mb-16 pt-8 px-4">
             <div class="flex justify-center mb-6">
-                <img src="/logo/favicon.png" alt="ShiroA Logo" class="w-24 h-24">
+                <img src="/logo/favicon.png" alt="ShiroA Logo" class="w-20 h-20 sm:w-24 sm:h-24">
             </div>
-            <h1 class="text-5xl font-bold mb-8 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+            <h1 class="text-4xl sm:text-5xl font-bold mb-8 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
                 ShiroA シ
             </h1>
-            <p class="text-gray-600 dark:text-gray-300 text-xl mb-8">
+            <p class="text-gray-600 dark:text-gray-300 text-lg sm:text-xl mb-8">
                 Your Ultimate Anime Companion App
             </p>
-            <div class="flex justify-center gap-4">
-                <a href="https://github.com/Rojaksaik/ShiroZone/releases/download/ShiroA/ShiroA.apk" class="px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full font-semibold text-lg shadow-lg hover:-translate-y-1 transition-transform">
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://github.com/Rojaksaik/ShiroZone/releases/download/ShiroA/ShiroA.apk" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full font-semibold text-lg shadow-lg hover:-translate-y-1 transition-transform">
                     Download Now
                 </a>
                 <a href="https://shiro-zonemy.vercel.app/" target="_blank" 
-                   class="px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-full font-semibold text-lg shadow-lg hover:-translate-y-1 transition-transform">
+                   class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-full font-semibold text-lg shadow-lg hover:-translate-y-1 transition-transform">
                     Watch Anime
                 </a>
             </div>
         </header>
 
         <!-- Features Section -->
-        <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 px-4">
             <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 transition-transform hover:scale-105">
                 <img src="/img/shiro1.png" alt="Feature 1" class="w-full h-48 object-cover rounded-lg mb-4">
                 <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Smart Anime Tracking</h3>
@@ -108,7 +118,7 @@
                 <h2 class="text-3xl font-bold mb-4">Stream on Shiro-Zone</h2>
                 <p class="mb-6 text-lg">Access thousands of anime titles with our streaming platform</p>
                 <a href="https://shiro-zonemy.vercel.app/" target="_blank" 
-                   class="inline-block px-8 py-4 bg-white text-indigo-600 rounded-full font-semibold text-lg shadow-lg hover:-translate-y-1 transition-transform">
+                   class="inline-block w-full sm:w-auto px-8 py-4 bg-white text-indigo-600 rounded-full font-semibold text-lg shadow-lg hover:-translate-y-1 transition-transform">
                     Start Watching Now
                 </a>
             </div>
@@ -121,7 +131,7 @@
             </h2>
             <div class="space-y-4">
                 <div class="bg-gradient-to-r from-indigo-600 to-purple-600 p-6 rounded-lg text-white cursor-pointer hover:translate-x-2 transition-transform">
-                    <h3 class="text-xl font-semibold mb-2 flex items-center gap-3">
+                    <h3 class="text-xl font-semibold mb-2 flex flex-wrap items-center gap-3">
                         <i class="fas fa-tv"></i> Anime Extensions
                         <span class="text-sm bg-white/20 px-2 py-1 rounded-full">Recommended</span>
                     </h3>
@@ -129,7 +139,7 @@
                         <i class="fas fa-info-circle"></i>
                         <span>Access to multiple anime sources</span>
                     </div>
-                    <code class="block bg-black bg-opacity-20 p-3 rounded flex items-center gap-2">
+                    <code class="block bg-black bg-opacity-20 p-3 rounded text-sm sm:text-base break-all">
                         <i class="fas fa-link"></i>
                         https://raw.githubusercontent.com/Kohi-den/extensions/main/index.min.json
                         <i class="fas fa-copy ml-auto hover:text-indigo-200"></i>
@@ -137,14 +147,14 @@
                 </div>
                 
                 <div class="bg-gradient-to-r from-purple-600 to-indigo-600 p-6 rounded-lg text-white cursor-pointer hover:translate-x-2 transition-transform">
-                    <h3 class="text-xl font-semibold mb-2 flex items-center gap-3">
+                    <h3 class="text-xl font-semibold mb-2 flex flex-wrap items-center gap-3">
                         <i class="fas fa-book"></i> Manga Extensions
                     </h3>
                     <div class="flex items-center gap-2 text-sm mb-3">
                         <i class="fas fa-info-circle"></i>
                         <span>Complete manga library access</span>
                     </div>
-                    <code class="block bg-black bg-opacity-20 p-3 rounded flex items-center gap-2">
+                    <code class="block bg-black bg-opacity-20 p-3 rounded text-sm sm:text-base break-all">
                         <i class="fas fa-link"></i>
                         https://raw.githubusercontent.com/komikku-repo/extensions/repo/index.min.json
                         <i class="fas fa-copy ml-auto hover:text-indigo-200"></i>
@@ -152,14 +162,14 @@
                 </div>
 
                 <div class="bg-gradient-to-r from-indigo-600 to-purple-600 p-6 rounded-lg text-white cursor-pointer hover:translate-x-2 transition-transform">
-                    <h3 class="text-xl font-semibold mb-2 flex items-center gap-3">
+                    <h3 class="text-xl font-semibold mb-2 flex flex-wrap items-center gap-3">
                         <i class="fas fa-book-open"></i> Novel Extensions
                     </h3>
                     <div class="flex items-center gap-2 text-sm mb-3">
                         <i class="fas fa-info-circle"></i>
                         <span>Light novel and web novel sources</span>
                     </div>
-                    <code class="block bg-black bg-opacity-20 p-3 rounded flex items-center gap-2">
+                    <code class="block bg-black bg-opacity-20 p-3 rounded text-sm sm:text-base break-all">
                         <i class="fas fa-link"></i>
                         https://raw.githubusercontent.com/dannovels/novel-extensions/repo/index.min.json
                         <i class="fas fa-copy ml-auto hover:text-indigo-200"></i>
