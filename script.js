@@ -1,14 +1,35 @@
-// Theme Toggle
+// Mobile menu functionality
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
 const themeToggle = document.getElementById('theme-toggle');
-        
+
+// Mobile menu toggle
+mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+});
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
+        mobileMenu.classList.add('hidden');
+    }
+});
+
+// Theme Toggle functionality for both mobile and desktop
+function toggleTheme() {
+    document.documentElement.classList.toggle('dark');
+    localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+}
+
 // Check for saved theme
 if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
     document.documentElement.classList.add('dark');
 }
 
-themeToggle.addEventListener('click', () => {
-    document.documentElement.classList.toggle('dark');
-    localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+// Add click handlers to both theme toggle buttons
+[themeToggle, mobileThemeToggle].forEach(button => {
+    button.addEventListener('click', toggleTheme);
 });
 
 // Copy Extension Links
