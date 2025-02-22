@@ -6,7 +6,7 @@ const translations = {
         },
         header: {
             title: 'ShiroA シ',
-            subtitle: 'Your Ultimate Anime Companion App',
+            subtitle: 'This application is your virtual girlfriend who is always loyal to accompany you to watch anime! 💕 Or if you want to be more serious, just think of it as a second wife who is ready to give recommendations for the best anime~ ✨',
             downloadButton: 'Download Now',
             watchButton: 'Watch Anime'
         },
