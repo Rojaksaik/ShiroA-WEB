@@ -44,7 +44,7 @@ const translations = {
             title: "Getting Started",
             step1: {
               title: "1. Download & Install",
-              description: "Get ShiroA from your device's app store and install it"
+              description: "Get ShiroA from your device's ShiroA-App and install it"
             },
             step2: {
               title: "2. Setup Account",
@@ -105,7 +105,7 @@ const translations = {
             title: 'Cara Penggunaan',
             step1: {
                 title: '1. Unduh & Pasang',
-                description: 'Dapatkan ShiroA dari app store perangkat Anda dan pasang'
+                description: 'Dapatkan ShiroA dari ShiroA-App perangkat Anda dan pasang'
             },
             step2: {
                 title: '2. Pengaturan Akun',
@@ -167,7 +167,7 @@ const translations = {
             title: '使用方法',
             step1: {
                 title: '1. ダウンロード＆インストール',
-                description: 'デバイスのアプリストアからShiroAを入手してインストール'
+                description: 'デバイスの しろA-アプリからShiroAを入手してインストール'
             },
             step2: {
                 title: '2. アカウント設定',
