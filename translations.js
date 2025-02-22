@@ -67,7 +67,7 @@ const translations = {
         },
         header: {
             title: 'ShiroA シ',
-            subtitle: 'Aplikasi Pendamping Anime Utama Anda',
+            subtitle: 'Aplikasi ini adalah pacar virtual kamu yang selalu setia menemani nonton anime! 💕 Atau kalau mau lebih serius, anggap aja ini istri kedua yang siap kasih rekomendasi anime terbaik~ ✨',
             downloadButton: 'Unduh Sekarang',
             watchButton: 'Tonton Anime'
         },
