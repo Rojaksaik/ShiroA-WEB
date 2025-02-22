@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShiroA App</title>
+    <link rel="icon" type="image/png" href="/logo/favicon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#8b5cf6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-gray-900 transition-all duration-300">
+    <!-- Navigation Bar -->
+    <nav class="fixed w-full top-0 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <img src="/logo/favicon.png" alt="ShiroA Logo" class="w-8 h-8">
+                <span class="text-xl font-bold text-gray-800 dark:text-white">ShiroA</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="https://shiro-zonemy.vercel.app/" target="_blank" 
+                   class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg transition-colors">
+                    Shiro-Zone
+                </a>
+                <button id="theme-toggle" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 shadow-lg transition-transform hover:scale-110">
+                    <i class="fas fa-moon dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:block"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8 mt-16">
+        <!-- Header -->
+        <header class="text-center mb-16 pt-8">
+            <div class="flex justify-center mb-6">
+                <img src="/logo/favicon.png" alt="ShiroA Logo" class="w-24 h-24">
+            </div>
+            <h1 class="text-5xl font-bold mb-8 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                ShiroA シ
+            </h1>
+            <p class="text-gray-600 dark:text-gray-300 text-xl mb-8">
+                Your Ultimate Anime Companion App
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#download" class="px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full font-semibold text-lg shadow-lg hover:-translate-y-1 transition-transform">
+                    Download Now
+                </a>
+                <a href="https://shiro-zonemy.vercel.app/" target="_blank" 
+                   class="px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-full font-semibold text-lg shadow-lg hover:-translate-y-1 transition-transform">
+                    Watch Anime
+                </a>
+            </div>
+        </header>
+
+        <!-- Features Section -->
+        <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 transition-transform hover:scale-105">
+                <img src="/img/shiro1.png" alt="Feature 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Smart Anime Tracking</h3>
+                <p class="text-gray-600 dark:text-gray-300">Track your favorite anime series and get personalized recommendations</p>
+            </div>
+            
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 transition-transform hover:scale-105">
+                <img src="/img/shiro2.png" alt="Feature 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Streaming Integration</h3>
+                <p class="text-gray-600 dark:text-gray-300">Direct access to Shiro-Zone streaming platform</p>
+            </div>
+            
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 transition-transform hover:scale-105">
+                <img src="/img/shiro3.png" alt="Feature 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Manga Read</h3>
+                <p class="text-gray-600 dark:text-gray-300">Read manga comfortably and without ads</p>
+            </div>
+        </section>
+
+        <!-- Streaming Section -->
+        <section class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-xl shadow-lg p-8 mb-16 text-white">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold mb-4">Stream on Shiro-Zone</h2>
+                <p class="mb-6 text-lg">Access thousands of anime titles with our streaming platform</p>
+                <a href="https://shiro-zonemy.vercel.app/" target="_blank" 
+                   class="inline-block px-8 py-4 bg-white text-indigo-600 rounded-full font-semibold text-lg shadow-lg hover:-translate-y-1 transition-transform">
+                    Start Watching Now
+                </a>
+            </div>
+        </section>
+
+        <!-- Extension Section -->
+        <section class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800 dark:text-white flex items-center gap-3">
+                <i class="fas fa-puzzle-piece"></i> Extensions ShiroA シ
+            </h2>
+            <div class="space-y-4">
+                <div class="bg-gradient-to-r from-indigo-600 to-purple-600 p-6 rounded-lg text-white cursor-pointer hover:translate-x-2 transition-transform">
+                    <h3 class="text-xl font-semibold mb-2 flex items-center gap-3">
+                        <i class="fas fa-tv"></i> Anime Extensions
+                        <span class="text-sm bg-white/20 px-2 py-1 rounded-full">Recommended</span>
+                    </h3>
+                    <div class="flex items-center gap-2 text-sm mb-3">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Access to multiple anime sources</span>
+                    </div>
+                    <code class="block bg-black bg-opacity-20 p-3 rounded flex items-center gap-2">
+                        <i class="fas fa-link"></i>
+                        https://raw.githubusercontent.com/Kohi-den/extensions/main/index.min.json
+                        <i class="fas fa-copy ml-auto hover:text-indigo-200"></i>
+                    </code>
+                </div>
+                
+                <div class="bg-gradient-to-r from-purple-600 to-indigo-600 p-6 rounded-lg text-white cursor-pointer hover:translate-x-2 transition-transform">
+                    <h3 class="text-xl font-semibold mb-2 flex items-center gap-3">
+                        <i class="fas fa-book"></i> Manga Extensions
+                    </h3>
+                    <div class="flex items-center gap-2 text-sm mb-3">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Complete manga library access</span>
+                    </div>
+                    <code class="block bg-black bg-opacity-20 p-3 rounded flex items-center gap-2">
+                        <i class="fas fa-link"></i>
+                        https://raw.githubusercontent.com/komikku-repo/extensions/repo/index.min.json
+                        <i class="fas fa-copy ml-auto hover:text-indigo-200"></i>
+                    </code>
+                </div>
+
+                <div class="bg-gradient-to-r from-indigo-600 to-purple-600 p-6 rounded-lg text-white cursor-pointer hover:translate-x-2 transition-transform">
+                    <h3 class="text-xl font-semibold mb-2 flex items-center gap-3">
+                        <i class="fas fa-book-open"></i> Novel Extensions
+                    </h3>
+                    <div class="flex items-center gap-2 text-sm mb-3">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Light novel and web novel sources</span>
+                    </div>
+                    <code class="block bg-black bg-opacity-20 p-3 rounded flex items-center gap-2">
+                        <i class="fas fa-link"></i>
+                        https://raw.githubusercontent.com/dannovels/novel-extensions/repo/index.min.json
+                        <i class="fas fa-copy ml-auto hover:text-indigo-200"></i>
+                    </code>
+                </div>
+            </div>
+            <div class="mt-6 p-4 bg-indigo-100 dark:bg-gray-700 rounded-lg">
+                <div class="flex items-center gap-2 text-indigo-600 dark:text-indigo-300">
+                    <i class="fas fa-lightbulb"></i>
+                    <p class="text-sm">Click on any extension link to copy it to your clipboard. You can then paste it in the app's extension manager.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructions -->
+        <section class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800 dark:text-white">Getting Started</h2>
+            <div class="space-y-6">
+                <div class="flex items-center gap-6">
+                    <img src="/img/shiro4.png" alt="Step 1" class="w-1/3 rounded-lg shadow-md">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">1. Download & Install</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Get ShiroA from your device's app store and install it</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-center gap-6">
+                    <img src="/img/shiro5.png" alt="Step 2" class="w-1/3 rounded-lg shadow-md">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">2. Setup Account</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Create your account and customize your anime preferences</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-center gap-6">
+                    <img src="/img/shiro6.png" alt="Step 3" class="w-1/3 rounded-lg shadow-md">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">3. Start Streaming</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Connect with Shiro-Zone and start watching your favorite anime</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+         <script src="script.js"></script>
+</body>
+</html>
