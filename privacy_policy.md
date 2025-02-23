@@ -2,7 +2,7 @@
 
 # Kebijakan Privasi  
 
-Terakhir Diperbarui: 30 February 2024  
+Terakhir Diperbarui: 21 February 2024  
 
 ## Pendahuluan  
 Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan menangani informasi Anda saat menggunakan Dantotsu. Kami berkomitmen untuk melindungi privasi Anda dan memastikan transparansi dalam praktik data kami.  
@@ -103,3 +103,4 @@ Layanan kami tidak ditujukan untuk anak-anak di bawah usia 13 tahun. Kami tidak 
 ## Perubahan Kebijakan Privasi  
 Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu. Kami akan memberi tahu Anda tentang perubahan dengan memposting versi terbaru di halaman ini dan memperbarui tanggal "Terakhir Diperbarui".  
 
+- Discord: [Dantotsu Issues] (https://discord.com/invite/jHsxNRC7)
