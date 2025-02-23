@@ -2,7 +2,7 @@
 
 # Kebijakan Privasi  
 
-Terakhir Diperbarui: 21 February 2024  
+Terakhir Diperbarui: 30 February 2024  
 
 ## Pendahuluan  
 Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan menangani informasi Anda saat menggunakan Dantotsu. Kami berkomitmen untuk melindungi privasi Anda dan memastikan transparansi dalam praktik data kami.  
@@ -92,8 +92,8 @@ Berdasarkan Peraturan Perlindungan Data Umum (GDPR) dan undang-undang perlindung
 - Meminta penghapusan komentar dan data terkait  
 
 Untuk menggunakan hak ini atau meminta penghapusan data Anda, silakan hubungi pengembang melalui:  
-- AniList: *"rebelonion"*  
-- Discord: *@rebelonion*  
+- AniList: *"shirokochan"*  
+- Discord: *@shirokochan*  
 
 Saat ini, kami belum memiliki proses otomatis untuk menghapus data, tetapi permintaan Anda akan diproses secara manual secepat mungkin.  
 
