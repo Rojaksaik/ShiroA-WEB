@@ -103,4 +103,4 @@ Layanan kami tidak ditujukan untuk anak-anak di bawah usia 13 tahun. Kami tidak 
 ## Perubahan Kebijakan Privasi  
 Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu. Kami akan memberi tahu Anda tentang perubahan dengan memposting versi terbaru di halaman ini dan memperbarui tanggal "Terakhir Diperbarui".  
 
-- Discord: [Dantotsu Issues] (https://discord.com/invite/jHsxNRC7)
+- Discord: (https://discord.com/invite/jHsxNRC7)
